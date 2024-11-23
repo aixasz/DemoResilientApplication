@@ -13,6 +13,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetConfTh.DemoResilience
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetConfTh.DemoResilience.DummyHost", "DotNetConfTh.DemoResilience.DummyHost\DotNetConfTh.DemoResilience.DummyHost.csproj", "{B79557DF-5F53-46DF-BE6C-22E2FB4F2EDB}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "http", "http", "{5A246717-7A99-4DAF-BA57-05545B245609}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "pipeline", "pipeline", "{2FF34094-20A7-4863-99CB-90F164079BCB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetConfTh.DemoResilience.Client", "DotNetConfTh.DemoResilience.Client\DotNetConfTh.DemoResilience.Client.csproj", "{5506DA7F-A7DC-4770-B659-2895E5960994}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,8 +45,20 @@ Global
 		{B79557DF-5F53-46DF-BE6C-22E2FB4F2EDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B79557DF-5F53-46DF-BE6C-22E2FB4F2EDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B79557DF-5F53-46DF-BE6C-22E2FB4F2EDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5506DA7F-A7DC-4770-B659-2895E5960994}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5506DA7F-A7DC-4770-B659-2895E5960994}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5506DA7F-A7DC-4770-B659-2895E5960994}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5506DA7F-A7DC-4770-B659-2895E5960994}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{149AF7D4-0B5B-4922-9ED6-26E46AF02795} = {2FF34094-20A7-4863-99CB-90F164079BCB}
+		{56789FE9-468D-4BD7-A7E5-7387934212D0} = {2FF34094-20A7-4863-99CB-90F164079BCB}
+		{E6158FF6-9C81-47A3-A166-0F405ED4CEE2} = {2FF34094-20A7-4863-99CB-90F164079BCB}
+		{B473F563-A0F0-46B9-992A-F4F6672C91B8} = {2FF34094-20A7-4863-99CB-90F164079BCB}
+		{B79557DF-5F53-46DF-BE6C-22E2FB4F2EDB} = {5A246717-7A99-4DAF-BA57-05545B245609}
+		{5506DA7F-A7DC-4770-B659-2895E5960994} = {5A246717-7A99-4DAF-BA57-05545B245609}
 	EndGlobalSection
 EndGlobal
