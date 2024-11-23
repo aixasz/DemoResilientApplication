@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35514.174
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetConfTh.DemoResilience.RetryPattern", "DotNetConfTh.DemoResilience.RetryPattern\DotNetConfTh.DemoResilience.RetryPattern.csproj", "{149AF7D4-0B5B-4922-9ED6-26E46AF02795}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetConfTh.DemoResilience.CircuitBreakerPattern", "DotNetConfTh.DemoResilience.CircuitBreakerPattern\DotNetConfTh.DemoResilience.CircuitBreakerPattern.csproj", "{56789FE9-468D-4BD7-A7E5-7387934212D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetConfTh.DemoResilience.Extensions", "DotNetConfTh.DemoResilience.Extensions\DotNetConfTh.DemoResilience.Extensions.csproj", "{E6158FF6-9C81-47A3-A166-0F405ED4CEE2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetConfTh.DemoResilience.RateLimitingPattern", "DotNetConfTh.DemoResilience.RateLimitingPattern\DotNetConfTh.DemoResilience.RateLimitingPattern.csproj", "{B473F563-A0F0-46B9-992A-F4F6672C91B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetConfTh.DemoResilience.DummyHost", "DotNetConfTh.DemoResilience.DummyHost\DotNetConfTh.DemoResilience.DummyHost.csproj", "{B79557DF-5F53-46DF-BE6C-22E2FB4F2EDB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{149AF7D4-0B5B-4922-9ED6-26E46AF02795}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{149AF7D4-0B5B-4922-9ED6-26E46AF02795}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{149AF7D4-0B5B-4922-9ED6-26E46AF02795}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{149AF7D4-0B5B-4922-9ED6-26E46AF02795}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56789FE9-468D-4BD7-A7E5-7387934212D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56789FE9-468D-4BD7-A7E5-7387934212D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56789FE9-468D-4BD7-A7E5-7387934212D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56789FE9-468D-4BD7-A7E5-7387934212D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6158FF6-9C81-47A3-A166-0F405ED4CEE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6158FF6-9C81-47A3-A166-0F405ED4CEE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6158FF6-9C81-47A3-A166-0F405ED4CEE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6158FF6-9C81-47A3-A166-0F405ED4CEE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B473F563-A0F0-46B9-992A-F4F6672C91B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B473F563-A0F0-46B9-992A-F4F6672C91B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B473F563-A0F0-46B9-992A-F4F6672C91B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B473F563-A0F0-46B9-992A-F4F6672C91B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B79557DF-5F53-46DF-BE6C-22E2FB4F2EDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B79557DF-5F53-46DF-BE6C-22E2FB4F2EDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B79557DF-5F53-46DF-BE6C-22E2FB4F2EDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B79557DF-5F53-46DF-BE6C-22E2FB4F2EDB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
