@@ -4,8 +4,6 @@ using Polly;
 using Polly.CircuitBreaker;
 using Polly.Registry;
 using Polly.Retry;
-using System;
-using System.Diagnostics;
 
 namespace DotNetConfTh.DemoResilience.CircuitBreakerPattern;
 

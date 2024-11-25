@@ -1,4 +1,3 @@
-using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Http.Resilience;
 using Polly;
 using Scalar.AspNetCore;
@@ -13,7 +12,7 @@ builder.Services.AddHttpClient("RetryResilientClient", options =>
 {
     builder.Retry = new HttpRetryStrategyOptions
     {
-        MaxRetryAttempts = 3,
+        MaxRetryAttempts = 10,
         MaxDelay = TimeSpan.FromSeconds(2),
         Delay = TimeSpan.FromMilliseconds(500),
         BackoffType = DelayBackoffType.Exponential
@@ -28,7 +27,7 @@ builder.Services.AddHttpClient("CircuitBreakerClient", options =>
 {
     builder.Retry = new HttpRetryStrategyOptions
     {
-        MaxRetryAttempts = 10,
+        MaxRetryAttempts = 20,
         MaxDelay = TimeSpan.FromSeconds(3),
         Delay = TimeSpan.FromSeconds(1),
         BackoffType = DelayBackoffType.Linear,

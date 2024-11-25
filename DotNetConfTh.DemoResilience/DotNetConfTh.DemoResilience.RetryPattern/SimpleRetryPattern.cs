@@ -7,7 +7,10 @@ public class SimpleRetryPattern
     {
         Console.WriteLine("Manual Retry Logic:");
         var simulateWork = new SimulateWork();
-        await ExecuteWithRetryAsync(simulateWork.ExecuteAsync, maxRetryAttempts: 3, delay: TimeSpan.FromSeconds(1));
+
+        await ExecuteWithRetryAsync(simulateWork.ExecuteAsync,
+                                    maxRetryAttempts: 3,
+                                    delay: TimeSpan.FromSeconds(1));
     }
 
     public async Task ExecuteWithRetryAsync(Func<Task> action, int maxRetryAttempts, TimeSpan delay)
@@ -25,7 +28,7 @@ public class SimpleRetryPattern
             {
                 attempt++;
                 Console.WriteLine($"Retry {attempt}: {ex.Message}");
-                await Task.Delay(delay); // Wait before retrying
+                await Task.Delay(delay);
             }
         }
     }

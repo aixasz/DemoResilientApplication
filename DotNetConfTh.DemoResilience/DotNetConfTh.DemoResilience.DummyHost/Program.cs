@@ -4,6 +4,7 @@ var app = builder.Build();
 // Simulate intermittent failures for retry testing
 app.MapGet("/retry", async context =>
 {
+
     var random = new Random();
     if (random.Next(0, 2) == 0) // Fail 50% of the time
     {
@@ -21,17 +22,18 @@ app.MapGet("/retry", async context =>
 // Simulate persistent failures followed by success for circuit breaker testing
 app.MapGet("/circuit-breaker", async context =>
 {
-    var random = new Random();
 
-    // Simulate failure 60% of the time
-    if (random.Next(0, 100) < 60) // 0-59 -> 60% chance of failure
+    var random = new Random();
+    if (random.Next(0, 2) == 0) // Fail 50% of the time
     {
         context.Response.StatusCode = 500; // Simulated failure
+        Console.WriteLine("Simulated failure");
         await context.Response.WriteAsync("Simulated failure");
     }
     else
     {
         context.Response.StatusCode = 200; // Success
+        Console.WriteLine("Success after circuit breaker");
         await context.Response.WriteAsync("Success after circuit breaker");
     }
 });
